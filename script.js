@@ -59,6 +59,7 @@ const gpaPointsLookup = {
  * QUERY SELECTORS VARIABLES GO HERE
  */
 const dropdownEl = document.querySelector(".dropdown");
+const dropdownButton = document.querySelector(".dropdown-button");
 const studName = document.querySelector("#student-name");
 const studAdvisor = document.querySelector("#student-advisor");
 const studMajor = document.querySelector("#student-major");
@@ -336,11 +337,12 @@ function addUpStudentCredits(reportCardTableElement) {
  */
 
 function calculateSemesterGpa(reportCardTableElement) {
-  // code goes here
+  //add code here
 }
+
 
 window.onload = function () {
   populateStudentInfo(studentInformation);
   updateReportCard(reportCardTable, semester);
-  addEventListeners(dropdownEl, reportCardTable, fallSemester, springSemester, winterTerm);
+  addEventListeners(dropdownEl, dropdownButton, reportCardTable, fallSemester, springSemester, winterTerm);
 }
